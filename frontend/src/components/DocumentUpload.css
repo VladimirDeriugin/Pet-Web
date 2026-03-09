@@ -1,0 +1,125 @@
+.upload-container {
+  width: 100%;
+}
+
+.drop-zone {
+  border: 2px dashed #555;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgba(255,255,255,0.03);
+  user-select: none;
+}
+
+.drop-zone:hover,
+.drop-zone.drag-over {
+  border-color: #646cff;
+  background: rgba(100, 108, 255, 0.08);
+}
+
+.drop-zone.has-file {
+  border-color: #4caf50;
+  background: rgba(76, 175, 80, 0.06);
+}
+
+.hidden-input {
+  display: none;
+}
+
+.drop-zone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.upload-icon,
+.file-icon {
+  font-size: 2.5rem;
+}
+
+.drop-text {
+  margin: 0.3rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.drop-subtext {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.supported-formats {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.selected-file-name {
+  margin: 0.3rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #4caf50;
+  word-break: break-all;
+}
+
+.file-size {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.error-message {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0;
+}
+
+.analyze-btn {
+  margin-top: 1.25rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #646cff, #9b59b6);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.analyze-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.analyze-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

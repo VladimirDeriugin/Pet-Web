@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.env
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor
+.idea/
+.vscode/
+*.suo
+.DS_Store
+
+# NLTK data (downloaded at runtime)
+nltk_data/
